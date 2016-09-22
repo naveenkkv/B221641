@@ -18,12 +18,13 @@ android {
         }
     }
 
-    flavorDimensions "version", "minsdk"
+    flavorDimensions "minsdk", "version"
 
     productFlavors {
         free {
             dimension "version"
             applicationId 'my.app'
+            minSdkVersion 15
         }
         paid {
             dimension "version"
@@ -35,7 +36,7 @@ android {
         }
         min15 {
             dimension "minsdk"
-            minSdkVersion 15
+            minSdkVersion 23
         }
     }
 }
